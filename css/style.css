@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,7 +22,38 @@ body{
     z-index:10;
 
 }
+.ba-top-joker, .ba-bottom-joker{
+    color:#fff;
+    margin-left: 5px;
+}
+.ba-joker-s{
+    position: absolute;
+    top:15px;
+    left: 10px;
+    z-index: -1;
+}
+.ba-bottom-joker {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
 
+}
+.ba-top-joker-red, .ba-bottom-joker-red{
+    color:#ff0000;
+    margin-left: 5px;
+}
+.ba-joker-d{
+    position: absolute;
+    top:35px;
+    left: 13px;
+    z-index: -1;
+}
+.ba-bottom-joker-red {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
+
+}
 .ba-heart, .ba-diamond {
     color: #ff0000;
 }
