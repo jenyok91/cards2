@@ -1,0 +1,706 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ba-card {
+    width: 140px;
+    height: 200px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 28px;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    position: relative;
+    margin: 20px;
+    box-shadow: 2px 2px 2px rgba(13, 13, 13, 0.30);
+    z-index:10;
+
+}
+
+.ba-heart, .ba-diamond {
+    color: #ff0000;
+}
+.ba-spade, .ba-club{
+    color:#fff;
+}
+
+/*Heart*/
+.ba-top-heart {
+    margin-left: 5px;
+}
+.ba-top-heart h1{
+    z-index: 10;
+}
+
+.ba-top-heart h1:after {
+    content: "♥";
+    position: absolute;
+    top: 25px;
+    left: 4px;
+    z-index: 10;
+}
+
+.ba-bottom-heart {
+    position: relative;
+    margin-right: 5px;
+}
+
+.ba-bottom-heart h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
+
+}
+
+.ba-bottom-heart h1:after {
+    content: "♥";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 10;
+}
+
+.ba-main {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+/*Spade*/
+.ba-top-spade {
+    margin-left: 5px;
+}
+
+.ba-top-spade h1:after {
+    content: "♠";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    z-index: 2;
+}
+
+.ba-bottom-spade {
+    position: relative;
+    margin-right: 5px;
+}
+
+.ba-bottom-spade h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
+
+}
+
+.ba-bottom-spade h1:after {
+    content: "♠";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 2;
+}
+
+.ba-main-spade {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+/*Diamond*/
+.ba-top-diamond {
+    margin-left: 5px;
+}
+
+.ba-top-diamond h1:after {
+    content: "♦";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    z-index: 2;
+}
+
+.ba-bottom-diamond {
+    position: relative;
+    margin-right: 5px;
+}
+
+.ba-bottom-diamond h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
+
+}
+
+.ba-bottom-diamond h1:after {
+    content: "♦";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 2;
+}
+
+.ba-main {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+/*Club*/
+
+.ba-top-club {
+    margin-left: 5px;
+}
+
+.ba-top-club h1:after {
+    content: "♣";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    z-index: 2;
+}
+
+.ba-bottom-club {
+    position: relative;
+    margin-right: 5px;
+}
+
+.ba-bottom-club h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
+
+}
+
+.ba-bottom-club h1:after {
+    content: "♣";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 2;
+}
+
+.ba-main-club {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+/*Mid*/
+
+.ba-main2 i:first-child {
+    position: absolute;
+    top: 35px;
+    left: 57px;
+}
+
+.ba-main2 i:last-child {
+    position: absolute;
+    bottom: 35px;
+    left: 57px;
+    transform: rotate(180deg);
+}
+
+.ba-main3 i:first-child {
+    position: absolute;
+    top: 35px;
+    left: 57px;
+}
+
+.ba-main3 i:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 57px;
+}
+
+.ba-main3 i:last-child {
+    position: absolute;
+    bottom: 35px;
+    left: 57px;
+    transform: rotate(180deg);
+}
+
+.ba-main4 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main4 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main4 i:nth-child(3) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main4 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main5 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main5 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main5 i:nth-child(3) {
+    position: absolute;
+    top: 85px;
+    left: 60px;
+}
+
+.ba-main5 i:nth-child(4) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main5 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main6 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main6 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main6 i:nth-child(3) {
+    position: absolute;
+    top: 85px;
+    left: 30px;
+}
+
+.ba-main6 i:nth-child(4) {
+    position: absolute;
+    bottom: 85px;
+    right: 30px;
+}
+
+.ba-main6 i:nth-child(5) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main6 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main7 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main7 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main7 i:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 57px;
+}
+
+.ba-main7 i:nth-child(4) {
+    position: absolute;
+    bottom: 85px;
+    left: 30px;
+}
+
+.ba-main7 i:nth-child(5) {
+    position: absolute;
+    top: 85px;
+    right: 30px;
+}
+
+.ba-main7 i:nth-child(6) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main7 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main8 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main8 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main8 i:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 57px;
+}
+
+.ba-main8 i:nth-child(4) {
+    position: absolute;
+    bottom: 85px;
+    left: 30px;
+}
+
+.ba-main8 i:nth-child(5) {
+    position: absolute;
+    top: 85px;
+    right: 30px;
+}
+
+.ba-main8 i:nth-child(6) {
+    position: absolute;
+    bottom: 65px;
+    left: 57px;
+    transform: rotate(180deg);
+}
+
+.ba-main8 i:nth-child(7) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main8 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main9 i:first-child {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+.ba-main9 i:nth-child(2) {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.ba-main9 i:nth-child(3) {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.ba-main9 i:nth-child(4) {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+
+.ba-main9 i:nth-child(5) {
+    position: absolute;
+    top: 95px;
+    right: 55px;
+}
+
+.ba-main9 i:nth-child(6) {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main9 i:nth-child(7) {
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main9 i:nth-child(8) {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main9 i:last-child {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main10 i:first-child {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+.ba-main10 i:nth-child(2) {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.ba-main10 i:nth-child(3) {
+    position: absolute;
+    top: 60px;
+    left: 57px;
+}
+
+.ba-main10 i:nth-child(4) {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.ba-main10 i:nth-child(5) {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+
+.ba-main10 i:nth-child(6) {
+    position: absolute;
+    bottom: 65px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main10 i:nth-child(7) {
+    position: absolute;
+    bottom: 65px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main10 i:nth-child(8) {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.ba-main10 i:nth-child(9) {
+    position: absolute;
+    bottom: 55px;
+    left: 57px;
+    transform: rotate(180deg);
+}
+
+.ba-main10 i:last-child {
+    position: absolute;
+    bottom: 35px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+/*Img*/
+.ba-valet-h{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index:-1;
+}
+.ba-queen-h{
+    position: absolute;
+    top:20px;
+    left: 21px;
+    z-index:-1;
+}
+.ba-king-h{
+    position: absolute;
+    top:20px;
+    left: 10px;
+    z-index:-1;
+}
+.ba-valet-s{
+    position: absolute;
+    top:10px;
+    left: 20px;
+    z-index:-1;
+}
+.ba-queen-s{
+    position: absolute;
+    top:20px;
+    left: 12px;
+    z-index:-1;
+}
+.ba-king-s{
+    position: absolute;
+    top:15px;
+    left: 10px;
+    z-index:-1;
+}
+.ba-valet-d{
+    position: absolute;
+    top:25px;
+    left:20px;
+    z-index:-1;
+}
+.ba-queen-d{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index:-1;
+}
+.ba-king-d{
+    position: absolute;
+    top:10px;
+    left: 15px;
+    z-index:-1;
+}
+.ba-valet-c{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index:-1;
+}
+.ba-queen-c{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index:-1;
+}
+.ba-king-c{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index:-1;
+}
+/*Flipper*/
+.flip-container {
+    perspective: 1000px;
+    margin-bottom: 20px;
+    }
+
+.flip-container:hover .flipper, .flip-container:hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 140px;
+    height: 200px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    /*position: relative;*/
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+/*Animation*/
+.ba-fade-in{
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
